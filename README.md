@@ -34,6 +34,7 @@ code or can be downloaded from a range of different sources :
 | OmicsCNGene.csv | copy number | https://depmap.org/portal/download/all/ | Public 23Q2  |
 | OmicsFusionFiltered.csv | gene fusions | https://depmap.org/portal/download/all/ | Public 23Q2  |
 | OmicsExpressionProteinCodingGenesTPMLogp1.csv | expression | https://depmap.org/portal/download/all/ | Public 23Q2  |
+| Model.csv | cell lines | https://depmap.org/portal/download/all/ | Public 23Q2  |
 | c1.all.v2023.1.Hs.json.txt | chromosomes | https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2023.1.Hs/ | 2023.1.Hs |
 | hgnc_complete_set.json | HUGO gene names | https://www.genenames.org/download/archive/ | Current |
 | c2.cp.reactome.v2023.2.Hs.symbols.gmt | pathways | https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2023.2.Hs/ | 2023.2.Hs |
@@ -92,22 +93,89 @@ COMMANDS**
 
 The available user commands are :
 
-| **CHRO** | Show chromosomal location of a list of genes |
-|----|----|
-| **CYTO** | Show chromosomal location of the CNV amplifications and deletions in a cell line |
-| **DEFI** | Define a *cancer profile* |
-| **EXPR** | Analyse expression profile of a gene |
-| **FIND** | Find genes whose disruptive mutation and/or deletion and/or low expression switches the dependency of a target gene |
-| **GOF** | Find genes whose dependency is switched by the presence of one or more documented gain-of-function mutations |
-| **LIST** | Apply **FIND** to a list of genes |
-| **LOCU** | Scan genes in a cytogenetic locus to find those where mutational disruption switches the dependency of a target gene |
-| **MINE** | Find target genes whose dependency is switched by a defined cancer profile, and optionally refine the *cancer profile* used |
-| **PARA** | Set various parameters and thresholds |
-| **PROF** | Read/write/organise *cancer profiles* and *cancer profile* collections |
-| **QUIT** | Does what it says |
-| **SIG** | Analyse the mutational signatures in cell lines matching a *cancer profile* |
-| **SWITCH** | Find gene whose dependency is switched in cell lines matching a *cancer profile* |
-| **TYPE** | Analyses the tissue type distribution of cell lines matching a *cancer profile* |
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 88%" />
+</colgroup>
+<thead>
+<tr>
+<th colspan="2"
+style="text-align: center;"><strong>Commands</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CHRO</strong></td>
+<td>Show chromosomal location of a list of genes</td>
+</tr>
+<tr>
+<td><strong>CYTO</strong></td>
+<td>Show chromosomal location of the CNV amplifications and deletions in
+a cell line</td>
+</tr>
+<tr>
+<td><strong>DEFI</strong></td>
+<td>Define a <em>cancer profile</em></td>
+</tr>
+<tr>
+<td><strong>EXPR</strong></td>
+<td>Analyse expression profile of a gene</td>
+</tr>
+<tr>
+<td><strong>FIND</strong></td>
+<td>Find genes whose disruptive mutation and/or deletion and/or low
+expression switches the dependency of a target gene</td>
+</tr>
+<tr>
+<td><strong>GOF</strong></td>
+<td>Find genes whose dependency is switched by the presence of one or
+more documented gain-of-function mutations</td>
+</tr>
+<tr>
+<td><strong>LIST</strong></td>
+<td>Apply <strong>FIND</strong> to a list of genes</td>
+</tr>
+<tr>
+<td><strong>LOCU</strong></td>
+<td>Scan genes in a cytogenetic locus to find those where mutational
+disruption switches the dependency of a target gene</td>
+</tr>
+<tr>
+<td><strong>MINE</strong></td>
+<td>Find target genes whose dependency is switched by a defined cancer
+profile, and optionally refine the <em>cancer profile</em> used</td>
+</tr>
+<tr>
+<td><strong>PARA</strong></td>
+<td>Set various parameters and thresholds</td>
+</tr>
+<tr>
+<td><strong>PROF</strong></td>
+<td>Read/write/organise <em>cancer profiles</em> and <em>cancer
+profile</em> collections</td>
+</tr>
+<tr>
+<td><strong>QUIT</strong></td>
+<td>Does what it says</td>
+</tr>
+<tr>
+<td><strong>SIG</strong></td>
+<td>Analyse the mutational signatures in cell lines matching a
+<em>cancer profile</em></td>
+</tr>
+<tr>
+<td><strong>SWITCH</strong></td>
+<td>Find gene whose dependency is switched in cell lines matching a
+<em>cancer profile</em></td>
+</tr>
+<tr>
+<td><strong>TYPE</strong></td>
+<td>Analyses the tissue type distribution of cell lines matching a
+<em>cancer profile</em></td>
+</tr>
+</tbody>
+</table>
 
 The individual commands are described in detail below.
 

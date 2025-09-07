@@ -1,0 +1,8 @@
+ALL
+#
+BRCANESS
+!brca1 | !brca2 | !palb2 | -brca1 | -brca2 | -palb2 | <2brca1 | <2brca2 | <2palb2
+ATM_LOSS
+!atm | -atm | <2atm
+TP53_LOSS
+!tp53 | -tp53 | <2tp53
